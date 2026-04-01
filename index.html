@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+        /* 1. FUNDO DO SITE */
+        body {
+            background-color: #A06F8A; /* Roxo escuro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 2. O CARTÃO (AGORA MAIOR) */
+        .cartao-principal {
+            background-color: #FFE9F0; /* Rosa clarinho */
+            width: 500px; /* Aumentado de 350px para 500px */
+            padding: 40px; /* Mais espaço interno */
+            border-radius: 50px;
+            position: relative;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 3. TOPO: FOTO + SERVIÇOS */
+        .cabecalho-topo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+
+        .moldura-foto {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .minha-foto {
+            width: 140px; /* Aumentado de 90px para 140px */
+            display: block;
+            border-radius: 5px;
+        }
+
+        .caixa-servicos {
+            background-color: #FF9BBF; /* Rosa vibrante */
+            color: white;
+            padding: 20px;
+            border-radius: 25px;
+            flex-grow: 1;
+        }
+
+        .caixa-servicos h3 {
+            font-size: 20px; /* Texto maior */
+            margin: 0 0 10px 0;
+        }
+
+        .caixa-servicos ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 16px; /* Lista maior */
+            line-height: 1.5;
+        }
+
+        /* 4. BOTÕES DE LINKS (MAIORES) */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .link-button {
+            background-color: #FF9BBF;
+            color: white;
+            text-decoration: none;
+            width: 90%;
+            padding: 18px; /* Botão mais alto */
+            text-align: center;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 18px; /* Letra maior */
+            transition: 0.3s;
+        }
+
+        .link-button:hover {
+            background-color: #ff85b0;
+            transform: scale(1.02);
+        }
+
+        /* 5. DECORAÇÕES (STICKERS) */
+        .decoracoes {
+            position: relative;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .sticker-snoopy {
+            position: absolute;
+            width: 100px; /* Snoopy maior */
+            top: 10px;
+            left: 0;
+        }
+
+        .sticker-disco {
+            position: absolute;
+            width: 120px;
+            bottom: 60px;
+            right: -10px;
+        }
+
+        .sticker-flowers {
+            position: absolute;
+            width: 280px; /* Flores maiores */
+            bottom: -30px;
+            right: -30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cartao-principal">
+        
+        <div class="cabecalho-topo">
+            <div class="moldura-foto">
+                <img src="IMG/imagem1.jpeg" class="minha-foto" alt="Foto">
+            </div>
+
+            <div class="caixa-servicos">
+                <h3>Meus Serviços:</h3>
+                <ul>
+                    <li>Fotografias</li>
+                    <li>Edição</li>
+                    <li>Story maker</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="links-container">
+            <a href="https://www.instagram.com/daydays14?igsh=MWE1eXd3bnJuNG05dA%3D%3D&utm_source=qr" class="link-button">Instagram</a>
+            <a href="https://www.tiktok.com/@euu0609?_r=1&_t=ZS-95Ay5nAhM1N" class="link-button">TikTok</a>
+            <a href="#" class="link-button">E-mail</a>
+        </div>
+
+        <div class="decoracoes">
+            <img src="IMG/isnupih.png" class="sticker-snoopy">
+            <img src="IMG/Ball.png" class="sticker-disco">
+            <img src="IMG/as fror.png" class="sticker-flowers">
+        </div>
+
+    </div>
+
+</body>
+</html>
